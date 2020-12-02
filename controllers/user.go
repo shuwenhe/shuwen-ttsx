@@ -147,7 +147,7 @@ func (this*UserController)HandleLogin()  {
 		return
 	}
 	if uer.PassWord!=pwd {
-		this.Data["errmsg"]="mima不存在，清重新登陆"
+		this.Data["errmsg"]="密码不存在，清重新登陆"
 		this.TplName="login.html"
 		return
 	}
